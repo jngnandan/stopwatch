@@ -56,8 +56,10 @@ export class Stopwatch extends Component {
                     {seconds < 10 & minutes < 10 ?
                         <h1 className='my-3 text-3xl font-bold'>{`0${minutes}:0${seconds}`}</h1>
                         :
-                        <h1 className='my-3 text-3xl font-bold'>{`${minutes}:${seconds}`}</h1>
+                        <h1 className='my-3 text-3xl font-bold'>{`0${minutes}:${seconds}`}</h1>
                     }
+
+
 
                     <div className='flex flex-row justify-center items-center'>
                         <button onClick={this.startTimer} className='bg-green-500 hover:bg-green-600 py-1 w-16 rounded m-1'>Start</button>
