@@ -45,10 +45,10 @@ export class Stopwatch extends Component {
         const { value, minutes, seconds } = this.state
 
         return (
-            <div className='flex flex-col p-20 justify-start items-center'>
-                <h1 className='text-3xl font-bold mb-6'>Stopwatch</h1>
+            <div className='flex flex-col p-20 justify-start items-center bg-pink-200 h-screen'>
+                <h1 className='text-3xl font-bold mb-6 text-left'>Stopwatch</h1>
 
-                <div className='card shadow flex flex-col justify-start items-center bg-white rounded'>
+                <div className='card shadow flex flex-col justify-start items-center bg-white rounded p-4'>
                     <div className='flex flex-row justify-center items-center'>
                         <img className='w-6 mr-2' src="https://assets.ccbp.in/frontend/react-js/stopwatch-timer.png" />
                         <p className='font-bold'>Timer</p>
@@ -61,7 +61,7 @@ export class Stopwatch extends Component {
 
 
 
-                    <div className='flex flex-row justify-center items-center'>
+                    <div className='flex flex-row justify-center items-center text-white'>
                         <button onClick={this.startTimer} className='bg-green-500 hover:bg-green-600 py-1 w-16 rounded m-1'>Start</button>
                         <button onClick={this.stopTimer} className='bg-red-500 hover:bg-red-600 py-1 w-16 rounded m-1'>Stop</button>
                         <button onClick={this.resetTimer} className='bg-yellow-500 hover:bg-yellow-600 py-1 w-16 rounded m-1'>Reset</button>
